@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphonize</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">Graphonize</h2>
+        <p class="text-center mb-4">Turns your json into Graph</p>
+        <div class="form-group">
+            <label for="jsonData">Enter JSON Data:</label>
+            <textarea id="jsonData" class="form-control" rows="5" placeholder="Enter JSON data here..."></textarea>
+            <small class="form-text text-muted">Enter JSON data in the format: {"label1": value1, "label2": value2, ...}</small>
+        </div>
+        <button class="btn btn-primary btn-block mb-3" onclick="createGraph()">Create Graph</button>
+        <button class="btn btn-success btn-block" onclick="downloadChart()">Download Chart</button>
+        <div class="chart-container mt-4">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
