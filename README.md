@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.jpg" height="200" width="200">
+</p>
+
 # Graphonize
 Turns your json into graph.
 
